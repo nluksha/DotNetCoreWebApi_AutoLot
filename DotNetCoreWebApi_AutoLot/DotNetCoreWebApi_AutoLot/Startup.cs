@@ -15,6 +15,7 @@ using DotNetCore_AutoLotDAL.EF;
 using DotNetCore_AutoLotDAL.Repos;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
+using DotNetCoreWebApi_AutoLot.Filters;
 
 namespace DotNetCoreWebApi_AutoLot
 {
@@ -33,7 +34,10 @@ namespace DotNetCoreWebApi_AutoLot
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc()
+            services.AddMvc(config =>
+            {
+                config.Filters.Add(new AutoLotExceptionFilter(env));
+            })
                 .AddJsonOptions(options =>
                 {
                     options.SerializerSettings.ContractResolver = new DefaultContractResolver();

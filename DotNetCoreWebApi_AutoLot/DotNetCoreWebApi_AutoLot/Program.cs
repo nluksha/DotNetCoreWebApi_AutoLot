@@ -7,6 +7,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using DotNetCore_AutoLotDAL.DataInitialization;
+using DotNetCore_AutoLotDAL.EF;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace DotNetCoreWebApi_AutoLot
 {
@@ -14,7 +17,18 @@ namespace DotNetCoreWebApi_AutoLot
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            var webHost = CreateWebHostBuilder(args).Build();
+
+            using (var scope = webHost.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                var context = services.GetRequiredService<AutoLotContext>();
+
+                MyDataInitializer.RecreateDatabase(context);
+                MyDataInitializer.InitializeData(context);
+            }
+
+            webHost.Run();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>

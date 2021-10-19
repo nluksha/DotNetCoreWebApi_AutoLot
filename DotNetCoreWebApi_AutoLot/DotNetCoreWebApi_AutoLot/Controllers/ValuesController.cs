@@ -12,9 +12,11 @@ namespace DotNetCoreWebApi_AutoLot.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<object> Get()
         {
-            return new string[] { "value1", "value2" };
+            var user = new { Name = "Tom", Age = 34 };
+
+            return user;
         }
 
         // GET api/values/5

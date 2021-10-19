@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreWebApi_AutoLot", "DotNetCoreWebApi_AutoLot\DotNetCoreWebApi_AutoLot.csproj", "{A81489D6-B9A1-4840-90FC-CB96DA8E7841}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore_AutoLotDAL.Models", "DotNetCore_AutoLotDAL.Models\DotNetCore_AutoLotDAL.Models.csproj", "{056615C8-5AFC-405F-8F66-56DBCBBE7FCA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore_AutoLotDAL", "DotNetCore_AutoLotDAL\DotNetCore_AutoLotDAL.csproj", "{3BB2EBA1-2F09-4433-84D7-11E90D592C5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A81489D6-B9A1-4840-90FC-CB96DA8E7841}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A81489D6-B9A1-4840-90FC-CB96DA8E7841}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A81489D6-B9A1-4840-90FC-CB96DA8E7841}.Release|Any CPU.Build.0 = Release|Any CPU
+		{056615C8-5AFC-405F-8F66-56DBCBBE7FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{056615C8-5AFC-405F-8F66-56DBCBBE7FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{056615C8-5AFC-405F-8F66-56DBCBBE7FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{056615C8-5AFC-405F-8F66-56DBCBBE7FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BB2EBA1-2F09-4433-84D7-11E90D592C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BB2EBA1-2F09-4433-84D7-11E90D592C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BB2EBA1-2F09-4433-84D7-11E90D592C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BB2EBA1-2F09-4433-84D7-11E90D592C5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreWebApi_AutoLot", "DotNetCoreWebApi_AutoLot\DotNetCoreWebApi_AutoLot.csproj", "{A81489D6-B9A1-4840-90FC-CB96DA8E7841}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A81489D6-B9A1-4840-90FC-CB96DA8E7841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A81489D6-B9A1-4840-90FC-CB96DA8E7841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A81489D6-B9A1-4840-90FC-CB96DA8E7841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A81489D6-B9A1-4840-90FC-CB96DA8E7841}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D56BD27-BB93-48B0-A4A3-9FA2AF6B45AC}
+	EndGlobalSection
+EndGlobal
